@@ -1,4 +1,3 @@
-alert("hello world");
 
 const faders = document.querySelectorAll(".fade-in");
 

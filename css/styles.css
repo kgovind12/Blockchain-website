@@ -234,7 +234,7 @@ body {
 /* Team */
 
 #team{
-  background-image: url("images/teambglight.png");
+  background-image: url("../images/teambglight.png");
   height: cover;
 }
 
