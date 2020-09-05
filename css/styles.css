@@ -11,7 +11,7 @@
 
 .fade-in{
   opacity: 0;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .fade-in.appear{
@@ -146,12 +146,14 @@ body {
 
 /* Cover */
 .cover {
+  margin-top: 10%;
   padding: 0 1rem;
 }
 
 
 /* Footer */
 .mastfoot {
+  padding-bottom: 20px;
   color: rgba(255, 255, 255, .5);
 }
 
@@ -234,7 +236,7 @@ body {
 /* Team */
 
 #team{
-  background-image: url("../images/teambglight.png");
+  background-image: url("../images/teambg.png");
   height: cover;
 }
 
@@ -326,6 +328,7 @@ body {
   border-radius: 0px;
   border: none;
   border-bottom: 1px solid var(--spot-color);
+  color: var(--spot-color);
 }
 
 .control:focus{
