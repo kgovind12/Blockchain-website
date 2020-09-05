@@ -11,7 +11,7 @@
 
 .fade-in{
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 
 .fade-in.appear{
@@ -48,7 +48,7 @@ body {
 }
 
 .home h1{
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   letter-spacing: 6px;
   padding-bottom: 10px;
 }
@@ -56,6 +56,7 @@ body {
 .home h2{
   letter-spacing: 20px;
   padding-bottom: 20px;
+  font-size: 3rem;
 }
 
 .home p{
@@ -100,6 +101,8 @@ body {
     transition: 0.25s;
 }
 
+
+
 /* Header */
 
 .masthead {
@@ -131,6 +134,12 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.nav-link{
+  font-size: 18px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 
@@ -236,8 +245,8 @@ body {
 /* Team */
 
 #team{
-  background-image: url("../images/teambg.png");
-  height: cover;
+  background: var(--main-black);
+  /* height: cover; */
 }
 
 
@@ -440,7 +449,7 @@ textarea{
 
 @media (max-width: 600px){
   .home h1{
-    font-size: 2rem;
+    font-size:2rem;
   }
 
   .home h2{
