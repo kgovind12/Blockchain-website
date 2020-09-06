@@ -1,3 +1,5 @@
+//with reference to Kevin Powell's Intersection Observer tutorial - 
+// https://www.youtube.com/watch?v=huVJW23JHKQ&t=485s
 
 const faders = document.querySelectorAll(".fade-in");
 

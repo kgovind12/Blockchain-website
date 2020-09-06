@@ -26,11 +26,16 @@
 
 
   <body id="home" class="text-center">
+    
+    <div class="particles">
+      <div id="particles-js"></div>
+    </div>
+
     <div class="home cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner">
             <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
               <a class="navbar-brand" href="#">
                 <img src="images/badlogo.png" width="120" alt="" loading="lazy">
@@ -49,13 +54,13 @@
                     <a class="nav-link" href="#about">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#services">SERVICES</a>
+                    <a class="nav-link" href="#services">WHAT WE DO</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#events">EVENTS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
+                    <a class="nav-link" href="#team">TEAM</a>
                   </li>
                 </ul>
               </div>
@@ -123,75 +128,32 @@
 
 <section id="services" class="services">
   <div class="servicescontainer">
-    <h2 class="fade-in">OUR SERVICES</h2>
+    <h2 class="fade-in">WHAT WE DO</h2>
     <hr class="yellow">
   
     <div class="card-deck fade-in">
       <div class="shadow p-3 mb-5 bg-white rounded card">
-        <img class="card-img" src="images/chillies.png" class="card-img-top" alt="...">
+        <img class="card-img" src="images/validatoricon.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Validators</h5>
           <p class="card-text">We partner with leading blockchain protocols and companies to host blockchain validators as a part of giving back to the blockchain community. </p>
         </div>
       </div>
       <div class="shadow p-3 mb-5 bg-white rounded card">
-        <img class="card-img" src="images/chillies.png" class="card-img-top" alt="...">
+        <img class="card-img" src="images/workicon.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Workshops</h5>
           <p class="card-text">We host weekly workshops centered around Ethereum and Decentralized applications, focusing on the basics of solidity and smart contracts.</p>
         </div>
       </div>
       <div class="shadow p-3 mb-5 bg-white rounded card">
-        <img class="card-img" src="images/chillies.png" class="card-img-top" alt="...">
+        <img class="card-img" src="images/schoolicon.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Accredited Courses</h5>
           <p class="card-text">We design open source accredited blockchain courses taught at UC Davis, introducing blockchain technology to undergraduates as a part of their coursework.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<section id="team" class="team">
-  <div class="teamcontainer fade-in">
-    <h2 class="fade-in">MEET OUR BOARD MEMBERS</h2>
-    <div class="row fade-in">
-        <div class="col-lg-3 col-md-4 col-sm-6 profile">
-            <img class="profile-img" src="images/chillies.png">
-            <h3>PERSON NAME</h3>
-            <h4>President</h4>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 profile">
-            <img class="profile-img" src="images/chillies.png">
-            <h3>PERSON NAME</h3>
-            <h4>Co-president</h4>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 profile">
-          <img class="profile-img" src="images/chillies.png">
-          <h3>PERSON NAME</h3>
-          <h4>Officer</h4>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 profile">
-        <img class="profile-img" src="images/chillies.png">
-        <h3>PERSON NAME</h3>
-        <h4>Officer</h4>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 profile">
-        <img class="profile-img" src="images/chillies.png">
-        <h3>PERSON NAME</h3>
-        <h4>Officer</h4>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 profile">
-        <img class="profile-img" src="images/chillies.png">
-        <h3>PERSON NAME</h3>
-        <h4>Officer</h4>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 profile">
-        <img class="profile-img" src="images/chillies.png">
-        <h3>PERSON NAME</h3>
-        <h4>Officer</h4>
-      </div>
   </div>
 </section>
 
@@ -204,7 +166,63 @@
 </section>
 
 
-<section id="contact" class="contact">
+<section id="team" class="team">
+  <div class="teamcontainer fade-in">
+    <h2 class="fade-in">OUR TEAM</h2>
+    <hr class="teamline">
+    <div class="row fade-in">
+        <div class="col-lg-4 col-md-4 profile">
+            <img class="profile-img" src="images/chillies.png">
+            <h3>PERSON NAME</h3>
+            <h4>President</h4>
+            <a href="#">Contact</a>
+        </div>
+        <div class="col-lg-4 col-md-4 profile">
+            <img class="profile-img" src="images/chillies.png">
+            <h3>PERSON NAME</h3>
+            <h4>Co-president</h4>
+            <a href="#">Contact</a>
+        </div>
+        <div class="col-lg-4 col-md-4 profile">
+          <img class="profile-img" src="images/chillies.png">
+          <h3>PERSON NAME</h3>
+          <h4>Officer</h4>
+          <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="row fade-in">
+      <div class="col-lg-3 col-md-4 profile">
+        <img class="profile-img" src="images/chillies.png">
+        <h3>PERSON NAME</h3>
+        <h4>Officer</h4>
+        <a href="#">Contact</a>
+      </div>
+      <div class="col-lg-3 col-md-4 profile">
+        <img class="profile-img" src="images/chillies.png">
+        <h3>PERSON NAME</h3>
+        <h4>Officer</h4>
+        <a href="#">Contact</a>
+      </div>
+      <div class="col-lg-3 col-md-4 profile">
+        <img class="profile-img" src="images/chillies.png">
+        <h3>PERSON NAME</h3>
+        <h4>Officer</h4>
+        <a href="#">Contact</a>
+      </div>
+      <div class="col-lg-3 col-md-4 profile">
+        <img class="profile-img" src="images/chillies.png">
+        <h3>PERSON NAME</h3>
+        <h4>Officer</h4>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- <section id="contact" class="contact">
   <div class="contactcontainer fade-in">
     <h2 class="fade-in">CONTACT US</h2>
     <div class="formcontainer fade-in">
@@ -216,7 +234,7 @@
       </form>
     </div>
   </div>
-</section>
+</section> -->
 
 <footer id="footer" class="footer">
   <div class="footercontainer">
@@ -252,11 +270,13 @@
         <p><a href="#">Discord</a></p>
       </div>
     </div>
-    <p class="mt-5 mb-3 text-muted">&copy; 2020 Copyright of Blockchain @ Davis</p>
+    <p class="mt-5 mb-3 text-muted">Icons from Material Design material.io | &copy; 2020 Copyright of Blockchain @ Davis</p>
   </div>
 </footer>
 
 <script src="script/script.js" type="text/Javascript"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>

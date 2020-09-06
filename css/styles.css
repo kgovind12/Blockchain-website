@@ -4,14 +4,24 @@
   --gradient: linear-gradient(black,#a17e0b);
   --reverse-gradient: linear-gradient(#a17e0b,black);
   --spot-color: #e3b646;
-  --off-white: rgb(237, 237, 237);
+  --off-white: rgb(218, 218, 218);
   --main-black: rgb(21, 21, 21);
   --grey: rgb(135, 135, 135);
 }
 
+.particles{
+  height:100%;
+  width:100%;
+  position: absolute;
+}
+
+#particles-js{
+  height: 100%;
+}
+
 .fade-in{
   opacity: 0;
-  transition: opacity 0.2s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .fade-in.appear{
@@ -33,12 +43,12 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: var(--gradient);
+  background: white;
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  color: var(--off-white);
+  /* color: var(--main-black); */
 }
 
 .cover-container {
@@ -49,26 +59,29 @@ body {
 
 .home h1{
   font-size: 4.5rem;
+  color: var(--spot-color);
   letter-spacing: 6px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .home h2{
+  color: var(--main-black);
   letter-spacing: 20px;
   padding-bottom: 20px;
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .home p{
+  color: var(--grey);
   padding-bottom: 40px;
 }
 
 .joinbutton {
   border-radius: 5px;
-  border: 1px solid var(--spot-color);
+  border: 2px solid var(--spot-color);
   display:inline-block;
   cursor:pointer;
-  color:var(--off-white);
+  color:var(--main-black);
   font-size:17px;
   padding:8px 25px;
   text-decoration:none;
@@ -79,7 +92,7 @@ body {
 
 
 .joinbutton:hover {
-  color: black;
+  color: white;
   background-color: var(--spot-color);
   text-decoration: none;
 }
@@ -91,9 +104,11 @@ body {
 }
 
 .icon {
-  color: rgb(191, 191, 191);
+  position: relative;
+  color: var(--spot-color);
   margin: 20px 40px;
   font-size: 2em;
+  z-index: 9999;
 }
 
 .icon:hover{
@@ -140,6 +155,13 @@ body {
   font-size: 18px;
   margin-left: 6px;
   margin-right: 6px;
+}
+
+.navbar{
+  background: white;
+  padding-top: 0.5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 
@@ -225,7 +247,7 @@ body {
 }
 
 .card-deck{
-  padding-top: 50px;
+  padding-top: 4rem;
 }
 
 .card{
@@ -235,11 +257,12 @@ body {
 .card-img{
   margin-left: 35%;
   width: 30%;
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
 
 .card-title{
   color: black;
+  font-size: 1.5rem;
 }
 
 .card-text{
@@ -248,53 +271,12 @@ body {
 
 
 
-/* Team */
-
-#team{
-  background: var(--main-black);
-  /* height: cover; */
-}
-
-
-.teamcontainer{
-  padding: 6% 10%;
-  text-align: center;   
-}
-
-
-.team h2{
-  font-size: 2.5rem;
-  padding-bottom: 40px;
-}
-
-.team h3{
-  font-size: 1.5rem;
-}
-
-.team h4{
-  font-size: 1rem;
-}
-
-.team .row{
-  padding:20px;
-  margin: 0;
-}
-
-.profile{
-  padding: 1.5rem;
-}
-
-.profile-img{
-  width: 13vw;
-  padding: 4%;
-}
-
-
 /* Events */
 
 #events{
-  background: var(--spot-color);
+  background: var(--main-black);
 }
+
 
 .events{
   text-align: center;
@@ -307,10 +289,69 @@ body {
 
 
 .events h2{
-  color: black;
+  color: white;
   font-size: 2.5rem;
   padding-bottom: 3rem;
 }
+
+
+
+
+/* Team */
+
+#team{
+  background: white;
+  color: black;
+}
+
+
+.teamcontainer{
+  padding: 6% 10%;
+  text-align: center;   
+}
+
+
+.team h2{
+  font-size: 2.5rem;
+}
+
+.team h3{
+  font-size: 1.5rem;
+}
+
+.team h4{
+  font-size: 1rem;
+}
+
+.team .row{
+  padding:15px;
+  margin: 0;
+}
+
+.teamline{
+  border: 2px solid var(--spot-color);
+  width: 12%;
+}
+
+.team a{
+  color: var(--spot-color);
+  text-decoration: none;
+}
+
+.team a:hover{
+  transition: 0.25s;
+  color: black;
+}
+
+.profile{
+  padding: 1.5rem;
+}
+
+.profile-img{
+  width: 13vw;
+  padding: 5%;
+}
+
 
 
 /* Contact */
@@ -405,7 +446,7 @@ textarea{
 /* Footer */
 
 #footer{
-  background: black;
+  background: var(--main-black);
 }
 
 .footer{
@@ -423,7 +464,7 @@ textarea{
 }
 
 .footer img{
-  width: 15vw;
+  width: 20vw;
   padding: 2rem;
 }
 
@@ -511,12 +552,24 @@ textarea{
     padding: 10% 0%;
 
   }
+
+  .footercolumn{
+    padding-bottom: 10%;
+  }
+
+  .footerlinks{
+    flex-direction: column;
+  }
 }
 
 
 @media (max-width: 1000px){
   .about img{
     width: 60%;
+  }
+
+  .profile-img{
+    width: 25vw;
   }
 
   .footer img{
