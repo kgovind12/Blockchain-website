@@ -158,11 +158,16 @@ body {
 }
 
 .navbar{
-  background: white;
   padding-top: 0.5%;
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.bg-scroll{
+  background: white;
+  transition: 0.25s;
+}
+
 
 
 @media (min-width: 48em) {
@@ -209,7 +214,7 @@ body {
 
 .about p{
   padding-top: 20px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--off-white);
 }
 
@@ -348,8 +353,14 @@ body {
 }
 
 .profile-img{
+  /* border: 1px solid var(--spot-color); */
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
   width: 13vw;
-  padding: 5%;
+  /* padding:1%; */
+  margin: 5%;
 }
 
 

@@ -23,4 +23,15 @@ const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll)
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
   });
+
+
+const navbar = document.querySelector(".navbar");
+window.onscroll = function(){
+  if (window.scrollY >= window.innerHeight-100){
+    navbar.classList.add('bg-scroll');
+  }
+  else{
+    navbar.classList.remove('bg-scroll');
+  }
+}
   
