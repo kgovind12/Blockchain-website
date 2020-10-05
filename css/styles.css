@@ -47,9 +47,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  /* color: var(--main-black); */
-}
 
 .cover-container {
   display: -ms-flexbox;
@@ -329,7 +326,7 @@ body {
 }
 
 .team .row{
-  padding:15px;
+  padding:12px;
   margin: 0;
 }
 
@@ -349,7 +346,7 @@ body {
 }
 
 .profile{
-  padding: 1.5rem;
+  padding: 0.8rem;
 }
 
 .profile-img{
