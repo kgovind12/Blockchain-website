@@ -505,6 +505,7 @@ textarea{
 
 .footercolumn {
   text-align: left;
+  margin: 0 10px;
 }
 
 .footer-credits {
@@ -558,10 +559,20 @@ textarea{
     padding: 0;
   }
 
+  .card-deck {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-img {
+    width: 30%;
+  }
+
   .logos{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
   }
 
   .footer img{
@@ -572,6 +583,7 @@ textarea{
 
   .footercolumn{
     padding-bottom: 10%;
+    text-align: center;
   }
 
   .footerlinks{
@@ -605,6 +617,23 @@ textarea{
 
   .footer img{
     width: 30vw;
+  }
+}
+
+@media (max-width: 1260px) and (min-width: 601px) {
+  .card-deck {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-img {
+    margin: auto;
+    width: 20%;
+    padding: 20px 0px;
+  }
+
+  .card {
+    max-width: 500px;
   }
 }
 
