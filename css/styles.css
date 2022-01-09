@@ -152,6 +152,7 @@ body {
   font-size: 18px;
   margin-left: 6px;
   margin-right: 6px;
+  text-transform: uppercase;
 }
 
 .navbar{
@@ -213,6 +214,7 @@ body {
   padding-top: 20px;
   font-size: 1.1rem;
   color: var(--off-white);
+  text-align: left;
 }
 
 .about img{
@@ -496,11 +498,18 @@ textarea{
   font-size: 14px;
   color: var(--grey);
   text-transform: uppercase;
-  justify-content:space-evenly;
+  justify-content:space-around;
   display: flex;
   flex-direction: row;
 }
 
+.footercolumn {
+  text-align: left;
+}
+
+.footer-credits {
+  line-height: 2;
+}
 
 
 

@@ -1,6 +1,9 @@
 //with reference to Kevin Powell's Intersection Observer tutorial - 
 // https://www.youtube.com/watch?v=huVJW23JHKQ&t=485s
 
+// Set date of copyright
+document.getElementById('currentyear').textContent = (new Date()).getFullYear().toString();
+
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
